@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Bank Insite</title>
+</head>
+<body>
+    <header class="font-semibold">
+        <h1 class="text-5xl text-center mt-6 font-serif">Let's get Some
+            <span class="font-bold text-orange-400">Maaaaney</span>!!
+        </h1>
+    </header>
+    <main>
+        <section class="mt-12">
+            <div class="grid grid-cols-4 gap-4 w-9/12 mx-auto text-white">
+                <div class="bg-orange-500 p-8 rounded-xl">
+                   <h4 class="text-3xl"> Deposit </h4>
+                   <h2 class="text-5xl">$<span id="deposit-total">00</span></h2>
+                </div>
+                <div class="bg-yellow-500 py-4 px-9 rounded-xl">
+                   <h4 class="text-3xl"> Withdraw </h4>
+                   <h2 class="text-5xl">$<span id="withdraw-total">00</span></h2>
+                </div>
+                <div class="bg-yellow-700 py-4 px-9 rounded-xl">
+                    <h4 class="text-3xl"> Send Maney </h4>
+                    <h2 class="text-5xl">$<span id="maney-total">00</span></h2>
+                 </div>
+                <div class="bg-violet-500 py-4 px-9 rounded-xl">
+                   <h4 class="text-3xl"> Blance </h4>
+                   <h2 class="text-5xl">$<span id="blance-total">1240</span></h2>
+                </div> 
+            </div>
+        </section>
+        <!-- Deposit And Withdraw --> 
+        <section class="mt-12">
+            <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto">
+                <div class="bg-fuchsia-400 p-8 rounded-xl">
+                   <h4 class="text-3xl font-serif">Pleace Deposit </h4>
+                   <input id="usar-deposit" class="w-9/12 block mb-3 px-3 py-2 font-mono rounded-xl mt-4 "
+                rounded-2xl" type="text" placeholder="$ amound you want to Deposit">
+                <button id="btn-deposit" class="bg-amber-600 px-8 py-2 text-white font-mono rounded hover:bg-sky-700 mt-2">Deposit</button>
+                </div>
+                
+                <div class="bg-sky-300 py-4 px-9 rounded-xl">
+                   <h4 class="text-3xl font-serif">Pleace Withdraw </h4>
+                   <input id="usar-withdraw" class="w-9/12 block mb-3 px-3 py-2 font-mono rounded-xl mt-4"
+                rounded-2xl" type="text" placeholder="$ amound you want to Withdraw">
+                <button id="btn-withdraw" class="bg-green-800 px-8 py-2 text-white font-mono rounded hover:bg-violet-800 mt-3">Withdraw</button>
+                </div>
+
+                <div class="bg-sky-700 py-4 px-9 rounded-xl">
+                    <h4 class="text-3xl font-serif">Pleace SendManey </h4>
+                    <input id="usar-maney" class="w-9/12 block mb-3 px-3 py-2 font-mono rounded-xl mt-4"
+                 rounded-2xl" type="text" placeholder="$ amound you want to Withdraw">
+                 <button id="btn-maney" class="bg-green-800 px-8 py-2 text-white font-mono rounded hover:bg-violet-800 mt-3">Send Maney</button>
+                 </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/deposite.js"></script>
+    <script src="js/withdraw.js"></script>
+    <script src="js/sendmaney.js"></script>
+</body>
+</html>
